@@ -558,32 +558,67 @@ span {
 }
 /* Mobile Styles */
 @media (max-width: 768px) {
-   html {
-       font-size: 90%; /* Adjust base font size */
-   }
+    html {
+        font-size: 90%; /* Adjust base font size */
+    }
 
-   header {
-       padding: 1rem; /* Adjust padding for header */
-   }
+    header {
+        padding: 1rem; /* Adjust padding for header */
+    }
 
-   .navbar {
-       width: 100%;
-       padding: 1rem;
-   }
+    .navbar {
+        width: 100%;
+        padding: 1rem;
+        background: rgba(0, 0, 0, 0.8); /* Make navbar background visible */
+        position: fixed; /* Fixed position for better visibility */
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center; /* Center align items */
+    }
 
-   .home-img img {
-       width: 80vw; /* Adjust image width for mobile */
-   }
+    .navbar a {
+        display: block;
+        font-size: 1.5rem; /* Adjust font size for better readability */
+        color: white;
+        margin: 0.5rem 0; /* Margin between links */
+    }
 
-   .home-content h1 {
-       font-size: 3rem; /* Adjust header size */
-   }
+    .home-img {
+        display: flex;
+        justify-content: center; /* Center image */
+        margin-top: 2rem; /* Margin from top */
+    }
 
-   .home-content p {
-       font-size: 1rem; /* Adjust text size */
-   }
+    .home-img img {
+        width: 70vw; /* Adjust image width */
+        max-width: 400px; /* Set a maximum width */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 50%; /* Circular image */
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+    }
 
-   .service-container {
-       grid-template-columns: 1fr; /* Single column layout */
-   }
+    .home-content {
+        text-align: center; /* Center align text */
+        padding: 1rem; /* Add padding around content */
+    }
+
+    .home-content h1 {
+        font-size: 2.5rem; /* Adjust header size */
+        margin: 1rem 0; /* Margin for spacing */
+    }
+
+    .home-content p {
+        font-size: 1rem; /* Adjust text size */
+        margin: 0 auto; /* Center text */
+        max-width: 90%; /* Ensure text does not stretch too wide */
+    }
+
+    .service-container {
+        display: grid;
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 1rem; /* Add gap between items */
+        padding: 1rem; /* Add padding around container */
+    }
 }
+
