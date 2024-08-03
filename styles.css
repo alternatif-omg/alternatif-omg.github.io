@@ -529,8 +529,8 @@ span {
       background: rgba(0, 0, 0, 0.8);
       backdrop-filter: blur(20px);
       border-bottom-left-radius: 2rem;
-      border-left:2px solid var(--main-color);
-      border-bottom: 2px solid var(--main-color);
+      border-left:2px solid var(--third-color);
+      border-bottom: 2px solid var(--third-color);
       display:none;
    }
    .navbar.active{
@@ -561,7 +561,7 @@ span {
       margin:0 auto;
    }
    .home-img img{
-      width: 56vw;
+      width: 36vw;
    }
    .services h2{
       margin-bottom: 3rem;
